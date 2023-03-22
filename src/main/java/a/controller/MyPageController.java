@@ -228,7 +228,6 @@ public class MyPageController {
 	}
 	
 	// 회원 탈퇴 - DB 접근하여 delete 후 message로 이동
-	// TODO : 수정 필요
 	@GetMapping("delMemberAf.do")
 	public String delMemberAf(Model model, MemberDto dto) {
 		boolean isS = service.delMember(dto);
