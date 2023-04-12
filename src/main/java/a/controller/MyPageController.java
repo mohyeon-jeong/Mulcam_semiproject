@@ -34,6 +34,11 @@ public class MyPageController {
 	@Autowired
 	MyPageService service;
 	
+	@GetMapping("test.do")
+	public String test() {
+		return "test";
+	}
+	
 	// 세션 만료 시 message.jsp로 이동
 	@AopSkip
 	@GetMapping("sessionOut.do")
